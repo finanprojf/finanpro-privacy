@@ -27,12 +27,21 @@
   ul { padding-left: 20px; }
   li { margin-bottom: 6px; }
   .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 13px; }
+  .data-finanpro-box {
+    background: #f0f4ff;
+    border-left: 4px solid #1A3FA8;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 16px;
+    margin: 16px 0;
+  }
+  .data-finanpro-box p { margin: 0 0 8px 0; }
+  .data-finanpro-box p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
 <div class="card">
 <h1>Política de Privacidad</h1>
-<p class="fecha">FinanPro · FinanPro Solutions · Última actualización: 14 de junio de 2026</p>
+<p class="fecha">FinanPro · FinanPro Solutions · Última actualización: 26 de octubre de 2026</p>
 
 <p>Esta Política de Privacidad describe cómo FinanPro ("la aplicación", "nosotros"), desarrollada por FinanPro Solutions, recopila, usa, almacena y protege la información de los usuarios y de los clientes que estos administran a través de la aplicación. Al usar FinanPro, usted acepta las prácticas descritas en este documento.</p>
 
@@ -43,6 +52,7 @@
   <li><strong>Datos de los clientes registrados por el usuario:</strong> nombres, números de cédula, teléfonos, direcciones y fotografías de cédula que el usuario ingresa para gestionar sus préstamos.</li>
   <li><strong>Datos de préstamos y pagos:</strong> montos, cuotas, fechas, saldos, gastos y demás información financiera que el usuario registra en la aplicación.</li>
   <li><strong>Datos de la empresa del usuario:</strong> nombre comercial, teléfono y dirección que el usuario configura para sus recibos y contratos.</li>
+  <li><strong>Datos de la red crediticia (Data FinanPro):</strong> si la empresa activa la participación en Data FinanPro, se comparten con la red el número de cédula del cliente, el estado y comportamiento de pago de sus préstamos, el monto de capital, y el nombre de la empresa prestamista. Estos datos se almacenan en nuestra base de datos compartida de forma segura.</li>
 </ul>
 
 <h2>2. Cómo usamos la información</h2>
@@ -52,6 +62,7 @@
   <li>Autenticar el acceso del usuario a su cuenta.</li>
   <li>Sincronizar los datos entre los dispositivos del usuario.</li>
   <li>Permitir el funcionamiento sin conexión a internet mediante almacenamiento local en el dispositivo.</li>
+  <li>Facilitar la consulta de historial crediticio a través de la red Data FinanPro, cuando la empresa haya activado voluntariamente su participación.</li>
 </ul>
 <p>FinanPro <strong>no vende, alquila ni comparte</strong> la información con terceros con fines publicitarios.</p>
 
@@ -68,16 +79,48 @@
 <h2>5. Responsabilidad del usuario</h2>
 <p>El usuario de FinanPro es responsable de la información de sus clientes que ingresa en la aplicación. El usuario declara que cuenta con el consentimiento necesario de sus clientes para almacenar y procesar dicha información conforme a las leyes aplicables de protección de datos.</p>
 
-<h2>6. Retención y eliminación de datos</h2>
-<p>Los datos se conservan mientras la cuenta esté activa. El usuario puede eliminar todos sus datos en cualquier momento desde la opción "Eliminar todos los datos" dentro de la aplicación. Al eliminar la cuenta o los datos, estos se borran de forma permanente de nuestros servidores y del dispositivo.</p>
+<h2>6. Red Crediticia Data FinanPro</h2>
+<p>Data FinanPro es una red crediticia privada y voluntaria entre empresas que utilizan FinanPro. Su propósito es permitir a los prestamistas consultar el historial de comportamiento de pago de sus clientes potenciales.</p>
 
-<h2>7. Datos de menores</h2>
+<div class="data-finanpro-box">
+  <p><strong>Participación voluntaria:</strong> La participación en Data FinanPro es completamente voluntaria. Ninguna empresa está obligada a unirse. Solo las empresas que activen explícitamente la opción "Participar en la red" dentro de la configuración de Data FinanPro contribuirán datos y podrán consultar la red.</p>
+  <p><strong>Consentimiento al activar:</strong> Al activar la participación, la empresa acepta los términos de uso de la red, que incluyen la responsabilidad sobre la veracidad de los datos aportados.</p>
+</div>
+
+<p><strong>Datos que se comparten en la red:</strong></p>
+<ul>
+  <li>Número de cédula del cliente (identificador anonimizado para la consulta).</li>
+  <li>Estado del préstamo (activo, saldado, incobrable).</li>
+  <li>Comportamiento de pago: promedio de días de atraso en los pagos.</li>
+  <li>Monto de capital del préstamo.</li>
+  <li>Nombre de la empresa prestamista (visible para otras empresas participantes como parte del principio de transparencia y rendición de cuentas de la red).</li>
+  <li>Número de teléfono de la empresa (opcional, configurable por cada empresa).</li>
+</ul>
+
+<p><strong>Datos que NO se comparten en la red:</strong></p>
+<ul>
+  <li>Nombre completo del cliente prestatario.</li>
+  <li>Dirección, teléfono u otros datos de contacto del cliente.</li>
+  <li>Fotografías de cédula.</li>
+  <li>Información financiera detallada más allá del capital y comportamiento de pago.</li>
+</ul>
+
+<p><strong>Acceso a la red:</strong> Solo las empresas que participan activamente en Data FinanPro pueden consultar el historial crediticio de un cliente. La consulta se realiza por número de cédula. Cada consulta queda registrada con la empresa que la realizó y la fecha.</p>
+
+<p><strong>Reciprocidad:</strong> La participación implica tanto contribuir datos como poder consultarlos. Si una empresa desactiva su participación, perderá acceso a la red y sus datos dejarán de ser consultables por otras empresas.</p>
+
+<p><strong>Derechos del cliente:</strong> Los clientes cuyos datos aparezcan en la red Data FinanPro pueden solicitar información sobre su historial contactando directamente a la empresa prestamista que registró los datos, o enviando una solicitud a <a href="mailto:finanprojf@gmail.com">finanprojf@gmail.com</a>.</p>
+
+<h2>7. Retención y eliminación de datos</h2>
+<p>Los datos se conservan mientras la cuenta esté activa. El usuario puede eliminar todos sus datos en cualquier momento desde la opción "Eliminar todos los datos" dentro de la aplicación. Al eliminar la cuenta o los datos, estos se borran de forma permanente de nuestros servidores y del dispositivo. Los datos contribuidos a la red Data FinanPro también se eliminarán cuando la empresa solicite su eliminación o elimine su cuenta.</p>
+
+<h2>8. Datos de menores</h2>
 <p>FinanPro no está dirigida a menores de edad y no recopila intencionalmente información de menores de 18 años.</p>
 
-<h2>8. Cambios a esta política</h2>
+<h2>9. Cambios a esta política</h2>
 <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Los cambios se publicarán en esta misma página con la fecha de actualización correspondiente.</p>
 
-<h2>9. Contacto</h2>
+<h2>10. Contacto</h2>
 <p>Si tiene preguntas sobre esta Política de Privacidad o sobre el manejo de sus datos, puede contactarnos en:</p>
 <p><strong>Desarrollador:</strong> FinanPro Solutions<br>
 <strong>Correo electrónico:</strong> <a href="mailto:finanprojf@gmail.com">finanprojf@gmail.com</a></p>
